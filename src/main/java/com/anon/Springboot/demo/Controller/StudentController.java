@@ -14,7 +14,7 @@ public class StudentController {
      private StudentService studentService;
 
     @GetMapping("/greetings")
-    public string greetings(){
+    public String greetings(){
         return "Welcome ..!";
     }
 

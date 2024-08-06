@@ -13,6 +13,11 @@ public class StudentController {
     @Autowired
      private StudentService studentService;
 
+    @GetMapping("/greetings")
+    public string greetings(){
+        return "Welcome ..!";
+    }
+
     @GetMapping("/student")
     public List<Student> getAllStudents(){
         return studentService.getAllStudents();
